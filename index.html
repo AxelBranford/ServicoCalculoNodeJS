@@ -1,6 +1,6 @@
 <html>
     <head>
-
+        <link rel="stylesheet" href="stylestyle.css">
     </head>
     <body>
         <!-- Ao clicar no botão, será enviado
@@ -9,10 +9,19 @@
         digitado pelo usuário.
     -->
         <form action="http://127.0.0.1:4000" method="get">
-            Digite seu nome <input name="nome">
             
+            <input name="numA" placeholder="Digite um número">
+            <select name="option">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">x</option>
+                <option value="/">/</option>
+            </select>
+            <input name="numB" placeholder="Digite um número">
+
             <button>Enviar</button>
         </form>
+        <script type="text/javascript" src="./script.js"></script>
 
     </body>
 </html>
